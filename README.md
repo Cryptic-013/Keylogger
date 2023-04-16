@@ -1,7 +1,19 @@
-This Python code uses the pynput library to log all the keyboard inputs and writes them into a file named key_log.txt. The script records all the key presses, including spaces, enter keys, and any other keys on the keyboard, and saves them into the file.
+**Keylogger**
 
-The code creates a new session in the file every time the code is run. If the file already exists, it will append the new session to the existing file. The code will terminate when the user presses the esc key, which will trigger the on_release function to return False.
+This Python script is a keylogger that records keystrokes and saves them in a file or sends them via email to a specified email address. It uses the 'keyboard' library to detect key events and 'smtplib' to send emails via the Simple Mail Transfer Protocol (SMTP).
 
-The on_release function is called every time a key is released, and it converts the pressed key to a string and writes it to the file. If the key pressed is the esc key, the function will return False, and the program will terminate.
+**Usage**
 
-Note that the purpose of keylogger programs is often to monitor and record user activities without their knowledge or consent, which is illegal in many countries. Therefore, you should use this code only for educational purposes or with the explicit permission of the user being monitored.
+The script can be used to monitor keystrokes on your own computer or to keep track of someone else's activities (with their consent). It can be run in the terminal with the command 'python keylogger.py' or using any other method to execute Python scripts.
+
+**Functionality**
+
+The keylogger records keystrokes, including special keys like ENTER and SPACE, and saves them to a file or sends them via email. The keystrokes are recorded at a specified interval (default is every 60 seconds) and the log file is named according to the start and end times of the recording session. The email address and password for sending emails must be specified in the code, as well as the report method (either "email" or "file").
+
+**Security**
+
+Using this script without consent is illegal and unethical. It is important to use this script only for lawful purposes, and to inform any users of the computer that their activity is being monitored. The email address and password should also be kept secure, and the log files should be deleted after use.
+
+**Note**
+
+This code is provided for educational purposes only. The author assumes no responsibility for any illegal or unethical use of this script.
